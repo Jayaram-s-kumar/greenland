@@ -208,14 +208,14 @@ p {
     width: 23px;
 }
 
-.cardscontainer {
+.cards-container {
     width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     column-gap: 30px;
-    justify-content: space-between;
+   
 
     @media (max-width:700px) {
         justify-content: center;
@@ -234,6 +234,7 @@ p {
     border-radius: 7px;
     padding-top: 20px;
     position: relative;
+  
 
 }
 

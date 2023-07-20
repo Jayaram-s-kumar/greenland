@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+h1,p{
+    margin: 0;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.container img{
+    width: 50%;
+}
+
+.details{
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    padding-left: 30px;
+    align-items: flex-start;
+    height: 570px;
+    flex-direction: column;
+
+}
+
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100px;
+    column-gap: 5px;
+    padding-left: 30px;
+    margin-top: 30px;
+}
+
+.rating img{
+    width: 20px;
+}
+
+.rating p{
+    font-weight: bold;
+}
+
+.price{
+    padding-left: 15px;
+    font-size: 30px;
+    color: green;
+    margin-top: 30px;
+    font-family: monospace;
+}
+
+
+.about,.box{
+    margin-top: 30px;
+    padding-left: 15px;
+    font-size: 15px;
+    color: gray;
+
+}
+
+.box ul li{
+    margin-bottom: 10px;
+}
+
+.heroimg{
+    object-fit: contain;
+}
+
+@media (max-width:900px) {
+
+    .container{
+        width: 100%;
+    }
+
+    .hero{
+        flex-direction: column;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .heroimg{
+        width: 90% !important;
+        margin-bottom: 30px;
+    }
+
+    .details{
+        width: 90%;
+    }
+
+    .details h1{
+        font-size: 25px;
+    }
+
+    .price{
+        padding-left: 0px;
+    }
+
+    .rating p{
+        font-size: 16px;
+    }
+
+    .rating img{
+        width: 15px;
+    }
+
+    .rating{
+        padding-left: 5px;
+    }
+
+    .about , .box{
+        padding-left: 0px;
+    }
+
+    .about p{
+        font-size: 15px;
+        width: 90%;
+        text-align: justify;
+    }
+
+    
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(185 218 212 / 59%);
+    padding: 2%;
+    box-sizing: border-box;
+
+    @media (max-width:800px) {
+        flex-direction: column;
+        align-items: baseline;
+        padding-left: 50px;
+        row-gap: 50px;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+}
+
+.greenland {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+}
+
+.contact p , .links p{
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.575);
+
+    @media (max-width:700px) {
+        font-size: 13px;
+        font-weight: 600;
+    }
+}
+
+.greenland p {
+    font-weight: 900;
+    color: #00800070;
+    letter-spacing: 0.5px;
+}
+
+.greenland img {
+    width: 20px;
+}

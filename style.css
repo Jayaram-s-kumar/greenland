@@ -511,14 +511,17 @@ a{
 .followus {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width:fit-content;
     margin: auto;
+    margin-top: 30px;
+   
 
 }
 
 .followus h2 {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 13px;
 }
 
 
@@ -527,11 +530,22 @@ a{
     align-items: center;
     justify-content: space-around;
     margin-bottom: 60px;
+    column-gap: 20px;
+}
+
+.icons img{
+    width: 20px;
 }
 
 .icons img {
     @media (max-width:700px) {
-        width: 45px;
+        width: 20px;
+    }
+}
+
+@media (max-width:700px) {
+    .icons{
+        margin-bottom: 0px;
     }
 }
 
@@ -544,6 +558,8 @@ a{
     background-color: rgb(185 218 212 / 59%);
     padding: 2%;
     box-sizing: border-box;
+    align-items: flex-start;
+    padding-top: 60px;
 
     @media (max-width:800px) {
         flex-direction: column;
@@ -585,16 +601,31 @@ a{
     }
 }
 
+.contact{
+    justify-content: left !important;
+}
+
+
 .greenland p {
-    font-weight: 900;
-    color: #00800070;
     letter-spacing: 0.5px;
     color: #1b3557;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 700;
 }
 
 .greenland img {
-    width: 130px;
-    padding-top: 18px;
+    width: 150px;
+    margin-bottom: -10px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #ce0505;
+}
+
+.footer{
+    padding-top: 50px;
 }
 
 .alloffers{
@@ -644,11 +675,11 @@ a{
 @media (max-width:600px) {
 
     .greenland img{
-        width: 93px;
+        width: 120px;
     }
 
     .greenland p{
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .alloffers{

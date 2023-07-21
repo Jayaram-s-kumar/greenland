@@ -138,6 +138,49 @@ h1,p{
     
 }
 
+
+.followus {
+    display: flex;
+    flex-direction: column;
+    width:fit-content;
+    margin: auto;
+    margin-top: 30px;
+   
+
+}
+
+.followus h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 13px;
+}
+
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 60px;
+    column-gap: 20px;
+}
+
+.icons img{
+    width: 20px;
+}
+
+.icons img {
+    @media (max-width:700px) {
+        width: 20px;
+    }
+}
+
+@media (max-width:700px) {
+    .icons{
+        margin-bottom: 0px;
+    }
+}
+
+
 .footer {
     display: flex;
     width: 100%;
@@ -155,14 +198,27 @@ h1,p{
         row-gap: 50px;
         padding-bottom: 30px;
         padding-top: 30px;
+        margin-top: 120px;
     }
 
 }
 
+.footer p{
+    font-size: 14px;
+    color: #5b6361c7;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: monospace;
+}
+
+
 .greenland {
     display: flex;
-    align-items: center;
     column-gap: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    row-gap: 20px;
 
 }
 
@@ -176,15 +232,42 @@ h1,p{
         font-weight: 600;
     }
 }
+.contact{
+    justify-content: left !important;
+}
 
 
 
 .greenland p {
-    font-weight: 900;
-    color: #00800070;
     letter-spacing: 0.5px;
+    color: #1b3557;
+    text-align: center;
+    font-family: 'Raleway';
+    font-weight: 700;
 }
 
 .greenland img {
-    width: 20px;
+    width: 150px;
+    margin-bottom: -10px;
+}
+
+
+.footer a{
+    text-decoration: none;
+    color: #ce0505;
+}
+
+.footer{
+    padding-top: 50px;
+}
+
+@media (max-width:600px) {
+
+    .greenland img{
+        width: 120px;
+    }
+
+    .greenland p{
+        font-size: 13px;
+    }
 }
